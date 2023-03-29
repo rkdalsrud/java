@@ -11,7 +11,6 @@ package basic;
 //[ctrl] + [f11] >> 실행 - 자동 컴파일
 //[ctrl] + [/] >>주석 실행, 주석 취소
 
-//안녕, 앙녀ㅕㅇ
 //주석문 : 프로그램에 설명을 제공하기 위한 문장
 // => 프로그램 실행과 아무런 관계없는 문장
 public class FirstEclipseApp {
