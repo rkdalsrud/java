@@ -17,18 +17,19 @@ public class VarirableApp {
 	
 	System.out.println("num="+num);
 	System.out.println("올해는 "+2+0+2+3+"년입니다.");
+	System.out.println(2+0+2+3+"년은 토끼띠해입니다.");//실행은 되지만 결과가 원하는대로 안나옴
 	System.out.println(2+0+2+3+"년은 토끼띠해입니다.");
 	System.out.println(""+2+0+2+3+"년은 토끼띠해입니다.");
 	System.out.println("==========================================");
 
 	int num1=100, num2=200;
-	System.out.println("연산결과= "+num1+num2);
+	System.out.println("연산결과= "+num1+num2);//실행은 되지만 결과가 원하는대로 안나옴
 	System.out.println("연산결과= "+(num1+num2));
 	System.out.println("연산결과= "+num1*num2);
 	System.out.println("연산결과="+(num1*num2)); //*할 경우 괄호 치는 것을 권장
 	System.out.println("==========================================");
-	int kor=88,eng=90;
-
+	
+	int kor=88,eng=90; //int tot=88+90 - 이렇게 하지말것!
 	int tot= kor+eng; //int tot=88+90 점수가 변동할 수 있기 때문에 앞처럼 써줘야 함, 연산 결과를 변수에 저장
 	System.out.println("점수합계="+tot);
 	System.out.println("==========================================");
