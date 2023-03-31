@@ -33,6 +33,26 @@ public class IfExample {
 		// => 평균은 소숫점 두자리까지만 출력하고 나머지는 절삭 처리 하세요.
 		String name="홍길동";
 		int kor=89, eng=93, mat=95;
+		int tot=89+93+95;
+		double ave=tot/3.;
+		
+		
+		
+		if(ave>90) {
+			System.out.println("A");
+		} else if(ave>=80) {
+			System.out.println("B");
+		} else if(ave>=70) {
+			System.out.println("C");
+		} else if(ave>=60) {
+			System.out.println("D");
+		} else {
+			System.out.println("F");
+		}
+		
+
+
+		System.out.println("이름: "+name+", 총점: "+tot+", 평균: "+ave);
 		
 
 		System.out.println("============================================================");
