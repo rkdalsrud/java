@@ -110,8 +110,6 @@ public class DataTypeApp {
 		//문자열을 표현하기 위한 자료형 : String 클래스
 		String name="임꺽정";
 		System.out.println("이름 = "+name);
-		System.out.println("==================================================================");
-		
+		System.out.println("==============================================================");
 	}
-
 }
