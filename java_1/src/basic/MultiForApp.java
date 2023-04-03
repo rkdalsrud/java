@@ -16,12 +16,18 @@ public class MultiForApp {
 		//★★★★★★★
 		//★★★★★★★
 		//★★★★★★★
-		for(int i=1;i<=4;i++) {//행(Row)을 처리하기 위한 반복문
-			for(int j=1;j<=7;j++) {//열(Column)을 처리하기 위한 반복문
+		for(int i=1;i<=4;i++) {
+			for(int j=1;j<=7;j++) {
 				System.out.print("★");
 			}
 			System.out.println();
 		}
+		/*for(int i=1;i<=4;i++) {//행(Row)을 처리하기 위한 반복문
+			for(int j=1;j<=7;j++) {//열(Column)을 처리하기 위한 반복문
+				System.out.print("★");
+			}
+			System.out.println();
+		}*/
 		System.out.println("==============================================================");
 		//2*1=2     3*1=3     ...     8*1=8      9*1=9
 		//2*2=4     3*2=6     ...     8*2=16     9*2=18
