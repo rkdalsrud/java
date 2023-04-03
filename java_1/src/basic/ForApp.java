@@ -99,5 +99,20 @@ public class ForApp {
 		}
 		System.out.println(begin+"~"+end+" 범위의 정수들의 합계 = "+sum);
 		System.out.println("==============================================================");
+		
+		int i=1;
+		for(;i<=4;i++) {
+			System.out.print(i+"\t");
+		}
+		for(;i>=1;i--) {
+			System.out.print(i+"\t");
+		
+		}
+		
+		
+		
+		
+		
 	}
+	
 }
