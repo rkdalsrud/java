@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class GuGuDanExample {
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
-		System.out.print("점수입력[2~7] >> ");
+		
 		
 		
 		int score;
