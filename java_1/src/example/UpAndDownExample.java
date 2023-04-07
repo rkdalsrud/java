@@ -15,10 +15,19 @@ public class UpAndDownExample {
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
 		int count=0;
-		
-		
+				
 		while(true) {
-			int computer=(int)(Math.random()*100)+1;
+ 
+			
+			 
+			
+			 
+			 
+			 
+			 
+			
+			 
+			
 			int user;
 			while(true) {
 			System.out.print("1~100 범위의 숫자를 입력하시오.");

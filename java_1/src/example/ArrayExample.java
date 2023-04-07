@@ -1,6 +1,6 @@
 package example;
 
-import java.lang.reflect.Array;
+
 
 public class ArrayExample {
 	
@@ -10,7 +10,6 @@ public class ArrayExample {
 			
 			//배열에 저장된 모든 사람들의 나이 평균을 계산하여 출력하세요.
 			
-			int people=17;
 			int tot=0;
 			for(int i=0;i<age.length;i++) {
 				tot += age[i];
@@ -30,8 +29,12 @@ public class ArrayExample {
 			//    ...
 			//    60대 = 1명
 			
-
-			int count10=0,count20=0,count30=0,count40=0,count50=0,count60=0;
+			int[] cnt=new int[6];
+			
+			
+			
+			
+			/*int count10=0,count20=0,count30=0,count40=0,count50=0,count60=0;
 			
 			for(int element : age) {
 				if(element >=60) {
@@ -60,7 +63,9 @@ public class ArrayExample {
 			System.out.println("40대 = "+count40);	
 			System.out.println("50대 = "+count50);	
 			System.out.println("60대 = "+count60);	
-
+			*/
+			
+			
 			System.out.println("===============================================================");
 		
 		}

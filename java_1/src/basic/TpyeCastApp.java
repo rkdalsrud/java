@@ -30,6 +30,14 @@ public class TpyeCastApp {
 		int su3=su1+su2;		
 		System.out.println("su3 = "+su3);
 		System.out.println("==============================================================");
+		
+		
+		
+		
+		
+		
+		
+		
 		//강제 형변환 : 프로그래머가 Cast 연산자를 사용하여 원하는 자료형의 값으로 일시적으로
 		//변환하여 명령을 작성하는 방법 - (자료형)값
 		int num=(int)12.3;//(int)12.3 >> 12

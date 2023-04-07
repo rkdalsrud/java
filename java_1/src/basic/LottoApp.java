@@ -12,7 +12,7 @@ public class LottoApp {
 			lotto[i]=(int)(Math.random()*45)+1;
 			
 			
-			boolean result=true; // false:미중복 true:중복
+			boolean result=false; // false:미중복 true:중복
 			for(int j=0;j<i;j++) {
 				if(lotto[i]==lotto[j]) {
 					result=true;
