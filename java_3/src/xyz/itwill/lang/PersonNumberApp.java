@@ -10,24 +10,6 @@ import java.util.Scanner;
 public class PersonNumberApp {
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
-			String number;
-			while(true) {
-				System.out.println("주민번호[ex.901225-1234567] >>");
-				number=scanner.nextLine().replace("","");
-				if(number.length()==14 && number.charAt(6)=='-') break;
-			
-				System.out.println("다시 입력하시오");
-			}
-			scanner.close();
-			if()
-				System.out.println("[결과] 생년월일 = "+20+num.substring(0,1));
-			
-		}
-	}
-
-	/*
-	public static void main(String[] args) {
-		Scanner scanner=new Scanner(System.in);
 
 		//주민번호를 저장하기 위한 변수
 		String number;
@@ -75,4 +57,3 @@ public class PersonNumberApp {
 		System.out.println("생년월일 = "+birthday+", 성별 = "+gender);
 	}
 }
-	*/
