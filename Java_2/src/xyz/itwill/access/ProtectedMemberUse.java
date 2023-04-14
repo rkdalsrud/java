@@ -2,11 +2,9 @@ package xyz.itwill.access;
 
 public class ProtectedMemberUse {
 	public void run() {
-		PackageMember member=new PackageMember();
+		ProtectedMember member=new ProtectedMember();
 		
-		member.num=1;
+		member.num=100;
 		member.display();
-		
-				
 	}
 }
