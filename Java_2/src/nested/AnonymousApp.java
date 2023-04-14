@@ -21,7 +21,7 @@ public class AnonymousApp {
 			public void display() {
 				System.out.println("익명의 내부클래스의 오버라이드 메소드 호출");
 			}
-		};
+		};//이름이 없는 내부클래스 (즉, 클래스를 다시 사용X, 객체는 1개)
 		
 		anonymous.display();
 	}
