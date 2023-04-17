@@ -22,12 +22,20 @@ public class ForExample {
 	      //1~100 범위의 정수에서 3의 배수들의 합계와 5의 배수들의 합계를 계산하여
 	      //3의 배수의 합계에서 5의 배수의 합계를 뺀 결과값을 출력하세요.
 	      //ex) 결과 = 633
-	      int three = 0, five =0;
+	     int three=0 , five=0;
+	      for(int i=1;i<=100;i++) {
+	    	  if(i%3==0) three+=i;
+	    	  if(i%5==0) five+=i;
+	      }
+	      System.out.println(three-five);
+	      
+	      
+	      /*int three = 0, five =0;
 	      for(int i=1;i<=100;i++) {
 	         if(i%3 ==0) three += i;
 	         if(i%5 ==0) five += i;
 	      }System.out.println("3의 배수 합계 - 5의 배수 합계= "+ (three-five));
-
+			*/
 
 	      System.out.println("=========================================");
 	      //구구단 중 7단을 화면에 출력하세요
@@ -44,10 +52,15 @@ public class ForExample {
 	      //5!의 결과값을 출력하세요.(5! = 5 * 4 * 3 * 2 * 1)
 	      //ex) 5! = 120
 	      int f=5, fac=1;
+	      for(int i=f;i<=5;i--) {
+	    	  fac *=i;
+	      }
+	      
+	     /*int f=5, fac=1;
 	      for(int i=f;i>=1;i--) {
 	          fac *= i;
 	      }
-	         System.out.println(f+"! ="+ fac);
+	         System.out.println(f+"! ="+ fac);*/
 	      
 
 	      System.out.println("=========================================");
@@ -58,7 +71,22 @@ public class ForExample {
 	      //    50    51    52     53     54     55     56
 	      //    57
 	      int begin=36, end=57;
+	      
 	      int count=0;
+	      for(int i=begin;i<=end;i++) {
+	    	  System.out.println(i+"\t");
+	    	  count++;
+	    	  if(count%7==0) {
+	    		  System.out.println();
+	    	  }
+	      }
+	      System.out.println();
+	      
+	      
+	      
+	      
+	      
+	      /*int count=0;
 	      for(int i=begin; i<=end; i++) {
 	          System.out.print(i+"\t");  
 	    	  count++;
@@ -67,6 +95,6 @@ public class ForExample {
 	      } 
 	    	  System.out.println();
 	      System.out.println("=========================================");   
-	   }
+	   }*/
 	   }
 }
