@@ -16,6 +16,8 @@ public class ConsoleCalculateApp {
 		String operation=scanner.nextLine().replace(" ", "");//모든 공백 제거
 		//System.out.println(" operation = "+operation);
 
+		scanner.close();
+		
 		//연삭식에서 검색할 연산자가 저장된 문자열 배열 선언
 		String[] operatorArray= {"*","/","-","+"};//배열쓸 떄 for사용하는걸 권장
 		
@@ -54,6 +56,8 @@ public class ConsoleCalculateApp {
 			case "+": result =num1 + num2; break;
 			case "-": result =num1 - num2; break;
 			}
+			//연산식 결과값
+			System.out.println("[결과]"+result);
 			
 		} catch (NumberFormatException e) {
 			System.out.println("[에러] 연산식에 숫자가 아닌 값이 입력되었습니다.");
