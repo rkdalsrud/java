@@ -1,17 +1,16 @@
 package xyz.itwill.lang.thread;
 
 public class SingleThread {
-	public void display() {
+	public void dispaly() {
 		/*
-		System.out.println("SingleThread 클래스의  display() 메소드 시작");
-		
-		//메소드의 명령을 모두 실행한 후 다시 현재 위치로 되돌아와 나머지 명령 실행
-		//new SingleThread().display();
-		
-		System.out.println("SingleThread 클래스의  display() 메소드 종료");
+		System.out.println("SingleThread 클래스의 display() 메소드 시작");
+		System.out.println("["+Thread.currentThread().getName()
+				+"] 스레드에 의해 SingleThread 클래스의 dispaly() 메소드 명령 실행");
+		System.out.println("SingleThread 클래스의 display() 메소드 종료");
 		*/
+		
 		for(char i='a';i<='z';i++) {
-			System.out.println(i);
+			System.out.print(i);
 		}
 	}
 }

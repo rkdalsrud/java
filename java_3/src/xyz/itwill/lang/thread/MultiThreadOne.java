@@ -1,6 +1,6 @@
 package xyz.itwill.lang.thread;
 
-public class MultiThreadOne  extends Thread {
+public class MultiThreadOne extends Thread {
 	@Override
 	public void run() {
 		for(char i='a';i<='z';i++) {
@@ -8,10 +8,8 @@ public class MultiThreadOne  extends Thread {
 			try {
 				Thread.sleep(500);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
 	}
 }
-
