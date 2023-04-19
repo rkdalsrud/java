@@ -27,13 +27,13 @@ public class ConsoleCalculateApp {
 			//전달 받은 문자열을 끝부터 차례대로 검색하여 시작위치를 반환하는 메소드
 			//=>매개변수로 전달받은 문자열을 찾을 수 없는 경우 -1반환 
 			//->뒤에서부터 계산하여 반환하여라
-			index=operation.lastIndexOf(operator);//-50+20하면 -가 연산자로 계산하여 lastIndexOf 사용
+			index=operation.lastIndexOf(operator);//-50+20하면 -가 연산자로 계산되어서 lastIndexOf 사용
 			
 			//연산식에서 연산자가 검색된 경우 반복문 종료
 			if(index != -1) break; //연산자를 찾으면 -1이 아니라 저장된 위치가 숫자로 저장
 		}
 		//연산자가 아예 없거나 연산자가 맨 앞에 있는 경우(이상한 위치에 있는 경우)
-		if(index <=0 || index>operation.length()-1) {
+		if(index <=0 || index>=operation.length()-1) {
 			System.out.println("[에러] 연산식을 잘못입력하였습니다."); 
 			System.exit(0);
 		}
