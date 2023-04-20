@@ -23,6 +23,7 @@ public class CalendarApp {
 				+calendar.get(Calendar.DATE)+"일 "
 				+day[calendar.get(Calendar.DAY_OF_WEEK)-1]+"요일";
 		
+		
 		System.out.println("현재 날짜 = "+printDate);
 	}
 }

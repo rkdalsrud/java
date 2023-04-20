@@ -9,10 +9,10 @@ public class WantCalendarApp {
 		Scanner sc=new Scanner(System.in);
 		 System.out.println("년도 입력>>");
 		 int year=sc.nextInt();
-		Scanner scanner=new Scanner(System.in);
+		
 		System.out.println("월 입력 >> ");
-		int month=scanner.nextInt();
-		scanner.close();
+		int month=sc.nextInt();
+		sc.close();
 		
 		Calendar calendar=Calendar.getInstance();
 		calendar.set(year, month-1, 1);;
