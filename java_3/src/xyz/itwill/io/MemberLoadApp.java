@@ -21,7 +21,6 @@ public class MemberLoadApp {
 				break;
 			}
 		}
-		//직렬화하는 과정에 생기는 에러인가?
 		in.close();
 	}
 }
