@@ -17,6 +17,6 @@ public class MessageReceiveApp {
 		
 		String message=new String(data);
 		System.out.println("결과 메시지>> "+message);
-		socket.close(); ㄴ
+		socket.close(); 
 	}
 }

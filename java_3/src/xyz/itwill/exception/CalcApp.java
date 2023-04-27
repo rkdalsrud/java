@@ -22,6 +22,7 @@ public class CalcApp {
 		// => 직접 예외를 처리하지 않고 메소드를 이용하여 예외 전달
 		System.out.println("[결과]"+num1+" / "+num2+" = "+(num1/num2));
 		
+		
 		scanner.close();
 	}
 	
