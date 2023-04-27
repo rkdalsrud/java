@@ -1,6 +1,10 @@
 
 package xyz.itwill.net;
 
+import java.awt.event.ContainerAdapter;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 //네트워크(Network) : 두 대이상의 컴퓨터에서 값을 송수신 하기 위한 기능
 
 //인터넷(Internet) : 현실 세계에 존재하는 모든 컴퓨터들을 연결한 네트워크 통신망 - 프로토콜
@@ -56,7 +60,17 @@ package xyz.itwill.net;
 //방화벽(Firewall) : 네트워크를 이용한 접속 및 데이타 전송 차단 또는 허용을 위한 시스템(프로그램)
 
 public class InetAdressApp {
-
+	public static void main(String[] args) throws UnknownHostException {
+		InetAddress myComputer= InetAddress.getLocalHost();
+		
+		System.out.println("내 컴퓨터= "+myComputer);
+		System.out.println("내 컴퓨터= "+myComputer.getHostAddress());
+		
+		InetAddress itwill=InetAddress.getByName("www.itwill.xyz");
+		System.out.println("www.itwill.xyz의 ip주소 "+itwill.getHostAddress());
+		
+		
+	}
 }
 
 
