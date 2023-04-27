@@ -10,7 +10,7 @@ import java.util.Date;
 // => NTP(Network Time Protocol) Server : 날짜와 시간을 제공하는 서버 컴퓨터
 public class TimeServerApp {
 	public static void main(String[] args) {
-		ServerSocket ntpServer=null;
+		ServerSocket ntpServer=null; // 끝에서도 결과값이 필요하기 때문에 한번에 선언 안함
 		
 		try {
 			//ServerSocket 객체 생성 : 포트를 활성화하여 클라이언트가 접속할 수 있는 환경 제공
