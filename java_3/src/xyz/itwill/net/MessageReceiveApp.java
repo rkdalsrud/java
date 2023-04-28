@@ -10,7 +10,7 @@ public class MessageReceiveApp {
 		//다른 컴퓨터에서 보내온 데이타를 전달받기 위한 DatagramSocket 객체 생성 
 		// => DatagramSocket 클래스의 DatagramSocket(int port) 생성자를 사용하여 포트를
 		//활성화 처리하여 DatagramSocket 객체 생성
-		DatagramSocket socket=new DatagramSocket(4000);
+		DatagramSocket socket=new DatagramSocket(4000);//포트 활성화
 		
 		//전달받은 값(메세지)을 저장하기 위한 byte 배열 선언 
 		byte[] data=new byte[1024];

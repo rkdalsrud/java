@@ -51,6 +51,8 @@ public class TimeServerApp {
 				//저장된 InetAddress 객체를 반환하는 메소드
 				System.out.println("[정보]클라이언트["+socket.getInetAddress()
 					.getHostAddress()+"]에게 날짜와 시간을 제공 하였습니다.");
+				//네트워크 식별자 중 ip address만 빼옴
+				 System.out.println(socket.getInetAddress().getHostAddress());
 				
 				//클라이언트와의 접속 해제
 				socket.close();
