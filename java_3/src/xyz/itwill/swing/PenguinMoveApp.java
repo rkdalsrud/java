@@ -8,8 +8,6 @@ import java.awt.event.KeyEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
-
-//
 public class PenguinMoveApp extends JFrame {
 	private static final long serialVersionUID = 1L;
 
@@ -44,7 +42,7 @@ public class PenguinMoveApp extends JFrame {
 		//URL 객체를 반환하는 메소드
 		//ImageIcon.getImage() : ImageIcon 객체에 저장된 그림파일의 Image 객체를 반환하는 메소드
 		//배경이미지 파일을 읽어 배경 이미지를 필드에 저장 
-		backImage=new ImageIcon(getClass().getResource("/images/back.jpg")).getImage();
+		//backImage=new ImageIcon(getClass().getResource("/images/back.jpg")).getImage();
 		
 		//펭귄이미지 파일을 읽어 필드(배열) 요소에 저장
 		penguins=new Image[3];

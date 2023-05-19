@@ -28,20 +28,30 @@ public class SelectEmpApp {
 			
 			rs=stmt.executeQuery(sql);
 			
-			if(rs.next()) {
-				do {
-					int empno=rs.getInt("empno");
-					String ename=rs.getString("ename");
-					int sal=rs.getInt("sal");
-					//사원번호,사원이름,급여
-					System.out.println("사원번호"+empno);
-					System.out.println("사원이름"+ename);
-					System.out.println("급여"+sal);
-					System.out.println("=====================");
-				}while(rs.next());
-			}else{
-				System.out.println("검색된 학생정보가 없습니다.");
-			}
+			//밑에서 또 사용할 게 아니라면 굳이 객체를 생성하지 않아도 된다.
+			
+			while(rs.next()) {
+				System.out.println("사원번호 = "+rs.getString("empno")+", 사원이름 = "
+						+rs.getString("ename")+", 급여 = "+rs.getInt("sal"));
+			} 
+			
+			//if(rs.next()) {
+				//do {
+				//	int empno=rs.getInt("empno");
+				//	String ename=rs.getString("ename");
+				//	int sal=rs.getInt("sal");
+				//	//사원번호,사원이름,급여
+				//	System.out.println("사원번호"+empno);
+				//	System.out.println("사원이름"+ename);
+				//	System.out.println("급여"+sal);
+				//	System.out.println("=====================");
+				//}while(rs.next());
+			//}else{
+			//	System.out.println("검색된 학생정보가 없습니다.");
+			//}
+
+			
+			
 		}catch (ClassNotFoundException e) {
 			System.out.println("클래스를 찾을 수 없습니다.");
 		} catch(SQLException e) {
